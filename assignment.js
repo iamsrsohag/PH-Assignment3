@@ -8,11 +8,9 @@ function kilometerToMeter(km){
         return km*1000;
     }
     else{
-        return "Invalid Input";
+        return "Invalid Input! Enter Positive Integer More Than Zero";
     }
 }
-
-
 // Problem 2 
 /**
  * Watch Price : 50, Phone Price: 100, Laptop Price: 500
@@ -33,7 +31,6 @@ function budgetCalculator(watchQty,mobileQty,laptopQty){
     }
 }
 
-
 //Problem 3 
 /**
  * Discount applicable after 10 days. 
@@ -47,7 +44,7 @@ function hotelCost(numOfDays){
     if(numOfDays<=0 || Number.isInteger(numOfDays)!=true){
         return "Invalid Input. Please a positive Integer above 0";
     }
-    else if(numOfDays<10){
+    else if(numOfDays<=10){
      return numOfDays*100;
     }
     else if(numOfDays>10 && numOfDays<=20){
